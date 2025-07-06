@@ -86,6 +86,8 @@ if (shippingService.hasShippableItems(cart)) {
 
 ![UML Class Diagram](Class_diagram.png)
 
+## Test
+![Test](Test.png)
 
 ---
 
