@@ -11,12 +11,12 @@ import Interfaces.IShippableInfo;
 public class Cart {
     private List<Item> items;
 
-    // Constructor
+
     public Cart() {
         this.items = new ArrayList<>();
     }
 
-    // Add a product to the cart with a specified quantity
+
     public void addProduct(Product product, int quantity) {
         if (product == null || quantity <= 0) {
             throw new IllegalArgumentException("Product must not be null and quantity must be positive.");
@@ -33,12 +33,12 @@ public class Cart {
         return subtotal;
     }
 
-    // Check if the cart is empty
+
     public boolean isEmpty() {
         return items.isEmpty();
     }
 
-    // Get all products in the cart
+
     public List<Product> getAllProducts() {
         List<Product> products = new ArrayList<>();
         for (Item item : items) {
@@ -47,7 +47,7 @@ public class Cart {
         return products;
     }
 
-    // Get all shippable products from the cart
+
     public List<IShippableInfo> getShippableItems() {
         List<IShippableInfo> shippables = new ArrayList<>();
         for (Item item : items) {

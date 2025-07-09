@@ -11,12 +11,12 @@ import java.util.List;
 
 public class ShippingService {
 
-    // Check if the cart has at least one shippable item
+
     public boolean hasShippableItems(Cart cart) {
         return !cart.getShippableItems().isEmpty();
     }
 
-    // Print shipping notice for a list of shippable products
+
     public void printShippingNotice(List<IShippableInfo> items) {
         if (items == null || items.isEmpty()) {
             System.out.println("No items to ship.");

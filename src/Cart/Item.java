@@ -5,7 +5,7 @@ public class Item {
     private Product product;
     private int quantity;
 
-    // Constructor
+
     public Item(Product product, int quantity) {
         if (product == null) {
             throw new IllegalArgumentException("Product cannot be null.");
@@ -17,7 +17,7 @@ public class Item {
         this.quantity = quantity;
     }
 
-    // Getters
+
     public Product getProduct() {
         return product;
     }

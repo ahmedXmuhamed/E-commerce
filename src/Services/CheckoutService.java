@@ -35,11 +35,10 @@ public class CheckoutService {
 
         customer.withdraw(total); // Deduct from customer's balance
 
-        // Print the receipt
         printReceipt(customer, cart, subtotal, total, shippingCost);
     }
 
-    // Private method to print the receipt
+    // Private method to print the receipt , I have made it private to be just method helper
     private void printReceipt(Customer customer, Cart cart, double subtotal, double totalPaid, double shippingFees) {
         System.out.println("===== RECEIPT =====");
         System.out.println("Customer: " + customer.getName());
